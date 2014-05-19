@@ -80,7 +80,7 @@ MMMMXXXX:::::::.............................................::::XXXMMMM
 		background-color: blue;
 		margin-left: auto;
 		margin-right: auto;
-		border: 5px solid white;
+		border: 10px solid white;
 	}
 	p {
 		padding-left: 30px;
@@ -152,6 +152,20 @@ MMMMXXXX:::::::.............................................::::XXXMMMM
             }, options.delay);
         });
     }
+
+    $.fn.retardedFlashyBorder = function(options) {
+        var defaults = {
+            delay: 500
+        };
+        var options = $.extend(defaults, options);
+
+        return this.each(function() {
+            var obj = $(this);
+            setInterval(function() {
+                $(obj).css('border', '10px solid #'+Math.floor(Math.random()*16777215).toString(16));
+            }, options.delay);
+        });
+    }
 }(jQuery));
 
 /////////////////////////////////////////////
@@ -160,7 +174,8 @@ MMMMXXXX:::::::.............................................::::XXXMMMM
 
 $(document).ready(function() {
 	$("h1").blink({delay: 200});
-	$(".blink").blink({delay: 200})
+	$(".blink").blink({delay: 200});
+	$('#content').retardedFlashyBorder({delay: 200});
 });
 </script>
 </body>
