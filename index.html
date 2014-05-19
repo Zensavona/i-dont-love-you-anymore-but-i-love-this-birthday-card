@@ -61,11 +61,18 @@ MMMMXXXX:::::::.............................................::::XXXMMMM
 		font-family: 'Source Sans Pro', sans-serif;
 	}
 	h1 {
-		font-weight: 700;
+		font-weight: 900;
 		text-align: center;
 		padding: 50px;
 		font-size: 3em;
 		text-transform: uppercase;
+	}
+
+	h2 {
+		font-weight: 700;
+		text-align: center;
+		padding: 50px;
+		font-size: 2em;
 	}
 	#content {
 		width: 900px;
@@ -89,11 +96,17 @@ MMMMXXXX:::::::.............................................::::XXXMMMM
     	margin-right: auto;
 		padding: 20px;
 	}
+	audio {
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
 	</style>
 </head>
 <body>
 <marquee direction="right"><img src="horse.gif"></marquee>
-<h1 id="test" class="blink">Happy Birthday Loosha!</h1>
+<h1 class="blink">Happy Birthday Loosha!</h1>
+<h2 class="blink">Turn your speakers on ;)</h2>
 <div id="content">
 	<p>
 		Happy birthday beautiful girl, I hope you're doing well, feeling as content as possible given the circumstances and proud of your achievements this year (and looking forward to what you can achieve as a 22 year old!). I want you to know that irrelivant of anything else in the world and the outcome of anything I will <i class="blink" style="color: hotpink;">always</i> care about you, support you in everything you choose to do and have a place inside my heart for you. You inspire me to be a better person, strive for better things and you are in my thoughts every single day. I cannot overstate how much you mean to me, how much you have taught me and how much I <span style="color: hotpink;">love</span> and respect you as a woman and a human being.
@@ -113,6 +126,9 @@ MMMMXXXX:::::::.............................................::::XXXMMMM
 		</p>
 	</div>
 	<img src="heartfire.gif">
+	<audio src="daniel_portman_elder.mp3" autoplay loop>
+		<p>Your browser does not support the audio element </p>
+	</audio>
 </div>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript">
@@ -143,7 +159,7 @@ MMMMXXXX:::::::.............................................::::XXXMMMM
 /////////////////////////////////////////////
 
 $(document).ready(function() {
-	$("h1").blink({delay: 200, changeColou: true});
+	$("h1").blink({delay: 200});
 	$(".blink").blink({delay: 200})
 });
 </script>
