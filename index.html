@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<!--
+
+        ||
+      --\ \||
+       --\ \||
+        --\ \||
+         --\ \|
+          --\ \
+             \ \
+              \ \
+               \ \
+              MMMMMMMMM                         MMMMMMMMM
+          MMMMMMMMMMMMMMMMMM               MMMMMMMMMMMMMMMMMM
+       MMMMMMMXXXXXXXXXXMMMMMMM         MMMMMMMXXXXXXXXXXMMMMMMM
+    MMMMMMXXXXXXXXXXXXXXXXXMMMMMM     MMMMMMXXXXXX:::::XXXXXXMMMMMM
+   MMMMMXXXXXXXX::::::::XXXXXXMMMM   MMMMXXXXXX:::::::::::XXXXXMMMMM
+  MMMMXXXXXXX:::::::::::::::XXXXMMM MMMXXXX::::::::::::::::::XXXXMMMM
+ MMMMXXXXXX::::::::::::::::::::XXXMMMXXX:::::::::::.....:::::::XXXMMMM
+ MMMXXXXX::::::::::::::::::::::::XXXXX:::::::::...........::::::XXXMMM
+MMMXXXXX:::::::::::.......:::::::::X::::::::......    ......::::XXXXMMM
+MMMXXXX:::::::::..............:::::::::::.......         ....::::XXXMMM
+MMMXXXX::::::::..................:::::.......             ...::::XXXMMM
+MMMXXXX:::::::.....................:............         ....::::XXXMMM
+MMMXXXX:::::::....................................       ....::::XXXMMM
+MMMXXXX:::::::......................................    .....::::XXXMMM
+MMMXXXXX::::::....................................... ......::::XXXXMMM
+MMMMXXXX:::::::.............................................::::XXXMMMM
+ MMMXXXX::::::::............................................::::XXXMMM
+ MMMMXXXX::::::::..........................................::::XXXMMMM
+  MMMXXXX::::::::::.......................................:::::XXXMMM
+  MMMMXXXX:::::::::::...................................::::::XXXMMMM
+   MMMXXXXX::::::::::::..............................::::::::XXXXMMM
+   MMMMXXXXX:::::::::::::.........................::::::::::XXXXMMMM
+    MMMMXXXXX:::::::::::::::...................::::::::::::XXXXMMMM
+     MMMMXXXXX:::::::::::::::::.............::::::::::::::XXXXMMMM
+      MMMMXXXXXX::::::::::::::::::.......::::::::::::::XXXXXXMMMM
+       MMMMXXXXXXXX::::::::::::::::...::::::::::::::XXXXXXXXMMMM
+         MMMMXXXXXXXXX::::::::::::::::::::::\::::XXXXXXXXXMMMM
+           MMMMMXXXXXXXXXX:::::::::::::::::\ \XXXXXXXXXMMMMM
+              MMMMMMXXXXXXXXXXX:::::::::XXXX\ \XXXXMMMMMM
+                  MMMMMMXXXXXXXXXXX:XXXXXXXXX\ \MMMMM
+                      MMMMMMXXXXXXXXXXXXXXXMMM\ \
+                          MMMMMMXXXXXXXMMMMMM  \ \
+                              MMMMMXMMMMM       \ \
+                                 MMMMM           \ \   \
+                                  MMM             \ \ \\
+                                   M             \\\\\\\
+                                                   \\\\\
+                                                     \\\
+                                                       \
+
+-->
+<head>
+	<title>Happy Birthday Sexy Pants!</title>
+	<style type="text/css">
+	@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
+	body { 
+		background: url("horsebg.jpg");
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+	h1 {
+		font-weight: 700;
+		text-align: center;
+		padding: 50px;
+		font-size: 3em;
+		text-transform: uppercase;
+	}
+	#content {
+		width: 900px;
+		min-height: 450px;
+		background-color: blue;
+		margin-left: auto;
+		margin-right: auto;
+		border: 5px solid white;
+	}
+	p {
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 1.5em;
+		color: white;
+	}
+	#content > img {
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+		padding: 20px;
+	}
+	</style>
+</head>
+<body>
+<marquee direction="right"><img src="horse.gif"></marquee>
+<h1 id="test" class="blink">Happy Birthday Loosha!</h1>
+<div id="content">
+	<p>
+		Happy birthday beautiful girl, I hope you're doing well, feeling as content as possible given the circumstances and proud of your achievements this year (and looking forward to what you can achieve as a 22 year old!). I want you to know that irrelivant of anything else in the world and the outcome of anything I will <i class="blink" style="color: hotpink;">always</i> care about you, support you in everything you choose to do and have a place inside my heart for you. You inspire me to be a better person, strive for better things and you are in my thoughts every single day. I cannot overstate how much you mean to me, how much you have taught me and how much I <span style="color: hotpink;">love</span> and respect you as a woman and a human being.
+	</p>
+	<p>
+		You are one of the most intelligent, logical, talented, driven and kind people I have been lucky enough to meet on this earth and you remind me of my grandma, who means the world to me. You have kind eyes like hers and I feel like I could lose myself in them, melting in a sea of safety, comfort and love. You mean the world to me Lucy and I wish I could be with you today.
+	</p>
+	<div style="text-align: center;">
+		<p>
+			I love you
+		</p>
+		<p>
+			Zen
+		</p>
+		<p>
+			(your big squishy beta phaggy time <strike>lover</strike>)
+		</p>
+	</div>
+	<img src="heartfire.gif">
+</div>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+(function($) {
+    $.fn.blink = function(options) {
+        var defaults = {
+            delay: 500
+        };
+        var options = $.extend(defaults, options);
+
+        return this.each(function() {
+            var obj = $(this);
+            setInterval(function() {
+                if ($(obj).css("visibility") == "visible") {
+                    $(obj).css('visibility', 'hidden');
+                }
+                else {
+                    $(obj).css('visibility', 'visible');
+                }
+                $(obj).css('color', '#'+Math.floor(Math.random()*16777215).toString(16));
+            }, options.delay);
+        });
+    }
+}(jQuery));
+
+/////////////////////////////////////////////
+///////////////////////////////////////////// 
+/////////////////////////////////////////////
+
+$(document).ready(function() {
+	$("h1").blink({delay: 200, changeColou: true});
+	$(".blink").blink({delay: 200})
+});
+</script>
+</body>
+<!-- 
+
+                                                     .- - - - - -,
+                                                      `"""""""""";
+            .;;;, .;;;,                   .;;;, .;;;,   `"""""""";
+       .;;;,;;;;;,;;;;;,.;;;,       .;;;.,;;;;;,;;;;;,;; ///""""";
+      ;;;;oOOoOOoOOoOOoOOo;;;. .,. .;;;oOOoOOoOOoOOoOO ///.  `""";
+  .,,.`oOOoOOOOOOOOOOOOOOoOOo,;;;;;,oOOoOOOOOOOOOOO#OoOOo;',,. `"'
+ ;;;;oOOoOOOOOOOOOOOOOOOOOOOoOOo;oOOoOOOOOOOOOOOOOOO##OoOOo;;;;
+ `;;OOoOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO##OOoOO;;'
+,;;,OOoOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO##oOoOO,;;,
+;;;;OOoOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO##OOoOO;;;;
+ ``.;OOoOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO##OOoOO;,''
+   ;;;;OOoOOOOOOOOOOOOOOOOOOOOOOOO///oOOOOOOOOOOOOO#OOoOO;;;;
+    ```.;OOoOOOOOOOOOOOOOOOOOOO///oOOOOOOOOOOOOOOOOOoOO;,'''
+       ;;;;OOoOOOOOOOOOOOOOO///oOOOOOOOOOOOOOOOOOOoOO;;;;
+        ```,;OOoOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOoOO;,'''
+            ;;;;OOoOOOOOOOOOOOOOOOOOOOOOOOOOOoOO;;;;
+             ````,;OOoOOOOOOOOOOOOOOOOOOOOoOO;, '''
+               .////;;OOoOOOOOOOOOOOOOOoOO;;;;
+            .////' ````,;OOoOOOOOOOOoOO;,''''
+         .////'        ;;;;;OOoOOoOO;;;;;
+      .////'            `````;;OO;;'''''    I love you moster <3
+    .///'                    `;;;;'
+  ///'
+  -->
+</html>
